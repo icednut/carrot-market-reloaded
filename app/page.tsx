@@ -1,29 +1,10 @@
 import Image from "next/image";
 
 export default function Home() {
-  return (<main className="bg-gray-100 h-screen flex items-center justify-center p-5 dark:bg-gray-700">
-    <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm dark:bg-gray-600 ">
-      <div className="flex justify-between items-center">
-        <div className="flex flex-col">
-          <span className="text-gray-600 font-semibold -mb-1 dark:text-gray-300">In transit</span>
-          <span className="text-4xl font-semibold dark:text-white">Coolblue</span>
-        </div>
-        <div className="size-12 bg-orange-400 rounded-full" />
-      </div>
-      <div className="my-2 flex items-center gap-2">
-        <span className="rounded-full bg-green-400 text-white  uppercase px-2.5 py-1.5 text-xs font-medium transition hover:bg-green-500 hover:scale-125 ">Today</span>
-        <span className="dark:text-gray-100">9:30-10:30</span>
-      </div>
-      <div className="relative">
-        <div className="bg-gray-200 w-full h-2 rounded-full absolute" />
-        <div className="bg-green-400 w-2/3 h-2 rounded-full absolute" />
-      </div>
-      <div className="flex justify-between items-center mt-5 text-gray-600 dark:text-gray-300">
-        <span>Expected</span>
-        <span>Sorting center</span>
-        <span>In transit</span>
-        <span className="text-gray-400 dark:text-gray-500">Delivered</span>
-      </div>
+  return (<main className="bg-gray-100 h-screen flex items-center justify-center p-5 sm:bg-red-200 md:bg-green-200 lg:bg-cyan-200 xl:bg-orange-200 2xl:bg-purple-200">
+    <div className="bg-white shadow-lg p-5 rounded-3xl w-full max-w-screen-sm flex flex-col md:flex-row gap-2">
+      <input className="w-full rounded-full bg-gray-200 pl-5 h-12 outline-none ring ring-transparent focus:ring-orange-500 focus:ring-offset-2 transition-shadow placeholder:drop-shadow" type="text" placeholder="Search here" />
+      <button className="bg-black text-white py-2 rounded-full active:scale-95 transition-transform font-medium outline-none md:px-10">Search</button>
     </div>
   </main>);
 }
