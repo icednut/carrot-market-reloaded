@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    a {
+        @apply text-orange-500;
+    }
+}
+
+@layer utilities {
+    .text-bigger-hello {
+        /* font-size: 414px; */
+        @apply text-3xl font-semibold
+    }
+}
+
+@layer components {
+    .btn {
+        @apply w-full bg-black text-white p-3 rounded-md mt-tomato
+    }
+}
+
+.my-main {
+    @apply bg-gray-100 h-screen flex items-center justify-center p-5 sm:bg-red-200 md:bg-green-200 lg:bg-cyan-200 xl:bg-orange-200 2xl:bg-purple-200
+}
