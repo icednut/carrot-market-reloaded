@@ -11,16 +11,16 @@
 @layer utilities {
   .text-bigger-hello {
     /* font-size: 414px; */
-    @apply text-3xl font-semibold
+    @apply text-3xl font-semibold;
   }
 }
 
 @layer components {
   .primary-btn {
-    @apply w-full bg-orange-500 text-white font-medium rounded-md text-center hover:bg-orange-400 transition-colors
+    @apply w-full bg-orange-500 text-white font-medium rounded-md text-center hover:bg-orange-400 transition-colors;
   }
 }
 
 .my-main {
-  @apply bg-gray-100 h-screen flex items-center justify-center p-5 sm:bg-red-200 md:bg-green-200 lg:bg-cyan-200 xl:bg-orange-200 2xl:bg-purple-200
+  @apply bg-gray-100 h-screen flex items-center justify-center p-5 sm:bg-red-200 md:bg-green-200 lg:bg-cyan-200 xl:bg-orange-200 2xl:bg-purple-200;
 }

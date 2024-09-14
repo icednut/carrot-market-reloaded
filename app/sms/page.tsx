@@ -27,5 +27,5 @@ export default function SMSLogin() {
         <FormButton loading={false} text="Verify" />
       </form>
     </div>
-  )
+  );
 }

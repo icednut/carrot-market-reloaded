@@ -9,16 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       margin: {
-        "tomato": "120px"
+        tomato: "120px",
       },
       borderRadius: {
-        "will": "11.11px"
-      }
-    }
+        will: "11.11px",
+      },
+    },
   },
   plugins: [
     // require('daisyui'),
-    require('@tailwindcss/forms'),
+    require("@tailwindcss/forms"),
   ],
 };
 export default config;
