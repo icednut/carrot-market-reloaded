@@ -11,6 +11,6 @@ export async function handleForm(prevState: any, data: FormData) {
   });
 
   return {
-    errors: ["wrong password", "password too short"],
+    errors: ["wrong password", "password too short", "username too short"],
   };
 }
